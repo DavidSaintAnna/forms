@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  background: #bfd7e4;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 368px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #293241;
+}
+
+.page {
+  width: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+header {
+  width: 319px;
+  margin-top: 74px;
+  white-space: nowrap;
+}
+
+header h1 {
+  font-family: "Staatliches", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: white;
+  text-align: center;
+}
+
+header p {
+  text-align: start;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+form {
+  margin-top: 38px;
+  background-image: linear-gradient(to bottom, #f67669 0 12%, #ffffff 12% 100%);
+  border-radius: 20px;
+  min-height: 300px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+img {
+  margin-top: 24px;
+}
+
+form legend {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: none;
+}
+
+#main-title {
+  border: 0;
+  font-family: "Staatliches", cursive;
+  margin-top: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+}
+
+fieldset legend {
+  font-family: "Staatliches", cursive;
+  font-weight: 400;
+  color: #535971;
+  font-size: 24px;
+  line-height: 34px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.input-wrapper-names {
+  display: flex;
+  margin-top: 34px;
+  gap: 22px;
+}
+
+.date-paragraph {
+  font-family: "Staatliches", cursive;
+  font-weight: 400;
+  color: #535971;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.input-wrapper-names input {
+  width: 300px;
+  height: 56px;
+  border-radius: 8px;
+}
+
+.input-wrapper label,
+.input-wrapper-names label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #6c6a71;
+}
+
+.input-wrapper select {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 56px;
+  width: 300px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+}
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  font-family: "Poppins", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+button {
+  width: 622px;
+  height: 51px;
+  padding: 15px, 40px, 15px, 40px;
+  background: #f67669;
+  border: 0;
+  border-radius: 8px;
+  font-family: "Staatliches", cursive;
+  margin-top: 63px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
