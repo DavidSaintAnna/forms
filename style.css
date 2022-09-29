@@ -173,17 +173,12 @@ footer {
   background: #535971;
   width: fit-content;
   height: 136px;
-  position: relative;
-  left: 381.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 40px 64px;
-
   margin-bottom: 100px;
-
   border-top: 1px solid #d6d6d6;
   border-radius: 0 0 20px 20px;
 }
